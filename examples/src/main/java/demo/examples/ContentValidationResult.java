@@ -15,7 +15,7 @@ public class ContentValidationResult implements java.io.Serializable
    {
    }
 
-   public java.lang.Boolean getIsbad()
+   public java.lang.Boolean getIs-bad()
    {
       return this.isbad;
    }
