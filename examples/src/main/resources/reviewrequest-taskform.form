@@ -1,0 +1,36 @@
+
+<form id="258806726">
+<property name="name" value="reviewrequest-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="3" name="selectedPullRequest_title" type="InputText" id="122943703">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;title (selectedPullRequest)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="selectedPullRequest/title"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="selectedPullRequest_state" type="InputText" id="144326013">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;state (selectedPullRequest)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="selectedPullRequest/state"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="selectedPullRequest_number" type="InputTextInteger" id="2013198563">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;number (selectedPullRequest)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="selectedPullRequest/number"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="0" name="canBeMerged" type="CheckBox" id="20185930">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;Result (canBeMerged)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="Result"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<dataHolder inputId="" name="#FBB767" type="basicType" outId="Result" value="java.lang.Boolean" id="canBeMerged"/>
+<dataHolder inputId="selectedPullRequest" name="#B29FE4" type="dataModelerEntry" outId="" value="demo.examples.PullRequest" id="selectedPullRequest"/>
+</form>
