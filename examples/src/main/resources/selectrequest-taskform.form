@@ -1,0 +1,36 @@
+
+<form id="1773412190">
+<property name="name" value="selectrequest-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="2" name="selectedPullRequest_state" type="InputText" id="1750876975">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;state (selectedPullRequest)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="Result/state"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="selectedPullRequest_number" type="InputTextInteger" id="224969262">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;number (selectedPullRequest)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="Result/number"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="0" name="requests" type="MultipleInput" id="1476062355">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;requests (requests)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="requests"/>
+<property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="3" name="selectedPullRequest_title" type="InputText" id="353000624">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;title (selectedPullRequest)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="Result/title"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="requests" name="#9BCAFA" type="basicType" outId="" value="java.util.List" id="requests"/>
+<dataHolder inputId="" name="#B29FE4" type="dataModelerEntry" outId="Result" value="demo.examples.PullRequest" id="selectedPullRequest"/>
+</form>
