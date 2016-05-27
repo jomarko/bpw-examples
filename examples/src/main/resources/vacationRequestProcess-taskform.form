@@ -1,0 +1,28 @@
+
+<form id="989738948">
+<property name="name" value="vacationRequestProcess-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="2" name="request/unpaid" type="CheckBox" id="1737413263">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;request/unpaidquot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="request/unpaid"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="0" name="request/reason" type="InputText" id="553748618">
+<property name="fieldRequired" value="true"/>
+<property name="label" value="quot;enquot;,quot;request/reasonquot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="request/reason"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="request/length" type="InputTextInteger" id="872420107">
+<property name="fieldRequired" value="true"/>
+<property name="label" value="quot;enquot;,quot;request/lengthquot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="request/length"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<dataHolder inputId="" name="#BBBBBB" type="dataModelerEntry" outId="request" value="demo.examples.VacationRequest" id="request"/>
+</form>
