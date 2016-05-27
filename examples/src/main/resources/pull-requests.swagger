@@ -1,0 +1,240 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.2.5",
+    "title": "pull-requests",
+    "description": "A sample API that uses a petstore as an example to demonstrate features in the swagger-2.0 specification",
+    "termsOfService": "http://swagger.io/terms/",
+    "contact": {
+      "name": "Swagger API Team",
+      "email": "foo@example.com",
+      "url": "http://madskristensen.net"
+    },
+    "license": {
+      "name": "MIT",
+      "url": "http://github.com/gruntjs/grunt/blob/master/LICENSE-MIT"
+    }
+  },
+  "host": "http://private-aa064c-pullrequests.apiary-mock.com",
+  "basePath": "/api",
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/repos/{owner}/{repository}/pulls": {
+      "get": {
+        "description": "Returns pull requests",
+        "operationId": "getPullRequests",
+        "parameters": [
+          {
+            "name": "owner",
+            "in": "path",
+            "description": "owner",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "repository",
+            "in": "path",
+            "description": "github repository",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "state",
+            "in": "query",
+            "description": "state of pull requests",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "pull requests",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/PullRequest"
+              }
+            },
+            "examples": {
+              "application/json": [
+                {
+                  "number": 1,
+                  "title": "First pull request",
+                  "state": "open"
+                },
+                {
+                  "number": 2,
+                  "title": "Second pull request",
+                  "state": "open"
+                }
+              ]
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/repos/{owner}/{repository}/pulls/{number}/comments": {
+      "get": {
+        "description": "Put comment to the PR",
+        "operationId": "commentPullRequest",
+        "parameters": [
+          {
+            "name": "owner",
+            "in": "path",
+            "description": "owner",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "repository",
+            "in": "path",
+            "description": "github repository",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "number",
+            "in": "path",
+            "description": "PR number",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "name": "comment",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Comment"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "pet response",
+            "schema": {
+              "$ref": "#/definitions/Comment"
+            },
+            "examples": {
+              "application/json": {
+                "body": "comment body"
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/repos/{owner}/{repository}/pulls/{number}/merge": {
+      "get": {
+        "description": "Merge the PR",
+        "operationId": "mergePullRequest",
+        "parameters": [
+          {
+            "name": "owner",
+            "in": "path",
+            "description": "owner",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "repository",
+            "in": "path",
+            "description": "github repository",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "number",
+            "in": "path",
+            "description": "PR number",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "pet response",
+            "schema": {
+              "$ref": "#/definitions/PullRequest"
+            },
+            "examples": {
+              "application/json": {
+                "number": 1,
+                "title": "First pull request",
+                "state": "merged"
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "PullRequest": {
+      "required": [
+        "number"
+      ],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "number": {
+          "type": "integer"
+        },
+        "state": {
+          "type": "string"
+        }
+      }
+    },
+    "Comment": {
+      "required": [
+        "body"
+      ],
+      "properties": {
+        "body": {
+          "type": "string"
+        }
+      }
+    },
+    "Error": {
+      "required": [
+        "code",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
