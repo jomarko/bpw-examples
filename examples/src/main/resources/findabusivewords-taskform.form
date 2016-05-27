@@ -1,0 +1,14 @@
+
+<form id="543904610">
+<property name="name" value="findabusivewords-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="abusiveWordsCount" type="InputTextInteger" id="1398928397">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;Result (abusiveWordsCount)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="Result"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<dataHolder inputId="" name="#B29FE4" type="basicType" outId="Result" value="java.lang.Integer" id="abusiveWordsCount"/>
+</form>
