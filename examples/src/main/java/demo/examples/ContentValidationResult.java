@@ -12,6 +12,8 @@ public class ContentValidationResult implements java.io.Serializable
    private java.lang.Boolean bad;
    private java.lang.Integer badWordsCount;
 
+   private java.lang.String badWords;
+
    public ContentValidationResult()
    {
    }
@@ -36,11 +38,22 @@ public class ContentValidationResult implements java.io.Serializable
       this.badWordsCount = badWordsCount;
    }
 
+   public java.lang.String getBadWords()
+   {
+      return this.badWords;
+   }
+
+   public void setBadWords(java.lang.String badWords)
+   {
+      this.badWords = badWords;
+   }
+
    public ContentValidationResult(java.lang.Boolean bad,
-         java.lang.Integer badWordsCount)
+         java.lang.Integer badWordsCount, java.lang.String badWords)
    {
       this.bad = bad;
       this.badWordsCount = badWordsCount;
+      this.badWords = badWords;
    }
 
 }
