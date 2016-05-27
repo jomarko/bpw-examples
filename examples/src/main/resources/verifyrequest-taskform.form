@@ -1,0 +1,36 @@
+
+<form id="560529120">
+<property name="name" value="verifyrequest-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="confirmed" type="CheckBox" id="1528076054">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;Result (confirmed)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="Result"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="2" name="vacation_request" type="Subform" id="1860612819">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;request (vacation)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="vacation/request"/>
+<property name="fieldClass" value="java.lang.Object"/>
+</field>
+<field position="1" name="vacation_id" type="InputTextInteger" id="26389675">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;id (vacation)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="vacation/id"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="3" name="vacation_status" type="InputText" id="1833042939">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;status (vacation)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="vacation/status"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="" name="#BBBBBB" type="basicType" outId="Result" value="java.lang.Boolean" id="confirmed"/>
+<dataHolder inputId="vacation" name="#FF54A7" type="dataModelerEntry" outId="" value="demo.examples.Vacation" id="vacation"/>
+</form>
