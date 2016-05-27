@@ -1,0 +1,14 @@
+
+<form id="270900570">
+<property name="name" value="providecontent-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="content_content" type="InputText" id="449938042">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;content (content)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="Result/content"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="" name="#FF54A7" type="dataModelerEntry" outId="Result" value="demo.examples.Content" id="content"/>
+</form>
