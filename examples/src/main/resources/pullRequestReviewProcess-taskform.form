@@ -1,0 +1,30 @@
+
+<form id="1244341587">
+<property name="name" value="pullRequestReviewProcess-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="repositoryOwner" type="InputText" id="241007967">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;repositoryOwnerquot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="repositoryOwner"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="repository" type="InputText" id="817685641">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;repositoryquot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="repository"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="requestState" type="InputText" id="1741835502">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;requestStatequot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="requestState"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="" name="#BBBBBB" type="basicType" outId="repository" value="java.lang.String" id="repository"/>
+<dataHolder inputId="" name="#BBBBBB" type="basicType" outId="repositoryOwner" value="java.lang.String" id="repositoryOwner"/>
+<dataHolder inputId="" name="#BBBBBB" type="basicType" outId="requestState" value="java.lang.String" id="requestState"/>
+</form>
