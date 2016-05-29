@@ -1,0 +1,51 @@
+
+<form id="508447189">
+<property name="name" value="findabusivewords-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="5" name="emailValidationResult_valid" type="CheckBox" id="1449707400">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;valid (emailValidationResult)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="emailValidationResult/valid"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="4" name="emailValidationResult_email" type="InputText" id="1207803529">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;email (emailValidationResult)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="emailValidationResult/email"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="contentValidationResult_bad" type="CheckBox" id="188038236">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;bad (contentValidationResult)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="contentValidationResult/bad"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="3" name="contentValidationResult_badWordsCount" type="InputTextInteger" id="868219284">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;badWordsCount (contentValidationResult)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="contentValidationResult/badWordsCount"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="2" name="contentValidationResult_badWords" type="InputText" id="67918416">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;badWords (contentValidationResult)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="contentValidationResult/badWords"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="0" name="abusiveWordsCount" type="InputTextInteger" id="1682332105">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;Result (abusiveWordsCount)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="Result"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<dataHolder inputId="" name="#B29FE4" type="basicType" outId="Result" value="java.lang.Integer" id="abusiveWordsCount"/>
+<dataHolder inputId="contentValidationResult" name="#9BCAFA" type="dataModelerEntry" outId="" value="demo.examples.ContentValidationResult" id="contentValidationResult"/>
+<dataHolder inputId="emailValidationResult" name="#BBBBBB" type="dataModelerEntry" outId="" value="demo.examples.EmailValidationResult" id="emailValidationResult"/>
+</form>
